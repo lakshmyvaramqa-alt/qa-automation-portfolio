@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Valid User",
+    "email": "portfolio_testuser@example.com",
+    "password": "Password123!",
+    "expectedResult": "failure",
+    "description": "Login with non-registered user"
+  },
+  {
+    "name": "Invalid User",
+    "email": "invalid_user_998877@example.com",
+    "password": "WrongPassword999",
+    "expectedResult": "failure",
+    "description": "Login with invalid credentials"
+  },
+  {
+    "name": "Special Chars User",
+    "email": "user_special@example.com",
+    "password": "WrongPassword123!",
+    "expectedResult": "failure",
+    "description": "Login with wrong password"
+  }
+]

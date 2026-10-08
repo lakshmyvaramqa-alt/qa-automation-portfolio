@@ -1,0 +1,35 @@
+# Java / Maven
+target/
+*.class
+*.dump
+*.dumpstream
+
+# Allure
+allure-results/
+allure-report/
+.allure/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Node / Cypress / Playwright
+node_modules/
+npm-debug.log*
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

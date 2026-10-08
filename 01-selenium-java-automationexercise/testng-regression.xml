@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Exercise - Full Regression Suite (All 26 Test Cases)" verbose="1">
+
+    <listeners>
+        <listener class-name="com.varalakshmy.listeners.AllureListener"/>
+    </listeners>
+
+    <test name="Full 26 Test Cases Regression">
+        <classes>
+            <class name="com.varalakshmy.tests.AuthTests"/>
+            <class name="com.varalakshmy.tests.ContactUsAndStaticTests"/>
+            <class name="com.varalakshmy.tests.ProductCatalogTests"/>
+            <class name="com.varalakshmy.tests.SubscriptionTests"/>
+            <class name="com.varalakshmy.tests.CartAndQuantityTests"/>
+            <class name="com.varalakshmy.tests.OrderAndCheckoutTests"/>
+            <class name="com.varalakshmy.tests.ScrollTests"/>
+        </classes>
+    </test>
+
+</suite>
