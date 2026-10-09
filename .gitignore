@@ -21,6 +21,7 @@ node_modules/
 npm-debug.log*
 playwright-report/
 test-results/
+.auth/
 cypress/videos/
 cypress/screenshots/
 
