@@ -1,0 +1,34 @@
+{
+  "name": "cypress-demoblaze",
+  "version": "1.0.0",
+  "description": "Production-grade Cypress E2E, API, and Network Interception test automation suite for Demoblaze",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:chrome": "cypress run --browser chrome --headless",
+    "test:ui": "cypress open",
+    "test:e2e": "cypress run --spec \"cypress/e2e/ui/**/*.cy.js\"",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "test:network": "cypress run --spec \"cypress/e2e/network/**/*.cy.js\"",
+    "report:generate": "mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json && marge cypress/reports/merged-report.json -f report -o cypress/reports"
+  },
+  "keywords": [
+    "cypress",
+    "javascript",
+    "automation",
+    "testing",
+    "demoblaze",
+    "api-testing",
+    "network-mocking",
+    "mochawesome"
+  ],
+  "author": "Varalakshmy M",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.0.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

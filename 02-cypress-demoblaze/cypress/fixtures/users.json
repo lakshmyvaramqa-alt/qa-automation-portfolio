@@ -1,0 +1,10 @@
+{
+  "validUser": {
+    "username": "demoblaze_test_user",
+    "password": "Password123!"
+  },
+  "invalidUser": {
+    "username": "non_existent_user_99999",
+    "password": "WrongPassword999!"
+  }
+}
