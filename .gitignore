@@ -24,6 +24,8 @@ test-results/
 .auth/
 cypress/videos/
 cypress/screenshots/
+cypress/reports/
+mochawesome-report/
 
 # Environment files
 .env

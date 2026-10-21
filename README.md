@@ -9,8 +9,8 @@ This repository contains my hands-on projects covering UI automation, API testin
 | # | Project | Technology | Status |
 |---|---|---|---|
 | 01 | Selenium Java Automation Exercise | Java 17, Selenium 4, TestNG, Jackson, Allure | 🟢 Done |
-| 02 | Cypress DemoBlaze | Cypress | ⚪ Planned |
-| 03 | Playwright Toolshop | Playwright, TypeScript | ⚪ Planned |
+| 02 | Cypress DemoBlaze | Cypress, JavaScript, Mochawesome | 🟢 Done |
+| 03 | Playwright Toolshop | Playwright, TypeScript | 🟢 Done |
 | 04 | SQL Pagila Validation | SQL | ⚪ Planned |
 | 05 | JMeter Juice Shop Performance | JMeter | ⚪ Planned |
 

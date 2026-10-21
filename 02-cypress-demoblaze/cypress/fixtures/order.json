@@ -1,0 +1,18 @@
+{
+  "validOrder": {
+    "name": "Jane Doe",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "card": "4111222233334444",
+    "month": "12",
+    "year": "2028"
+  },
+  "partialOrder": {
+    "name": "",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "card": "",
+    "month": "12",
+    "year": "2028"
+  }
+}
