@@ -1,0 +1,30 @@
+{
+  "name": "sql-pagila-validation",
+  "version": "1.0.0",
+  "description": "Production SQL database validation suite, business reporting, and defect injection testing on PostgreSQL Pagila",
+  "main": "src/runner.js",
+  "type": "commonjs",
+  "scripts": {
+    "validate": "node src/runner.js",
+    "validate:clean": "node src/runner.js --mode clean",
+    "validate:defects": "node src/runner.js --mode defects",
+    "download:dump": "node src/download-pagila.js",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "postgresql",
+    "sql",
+    "database-testing",
+    "data-quality",
+    "qa-automation",
+    "pagila",
+    "docker"
+  ],
+  "author": "Varalakshmy M",
+  "license": "ISC",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.14",
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.0"
+  }
+}
