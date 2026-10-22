@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: pagila-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_NAME:-pagila}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - ./sql/00-init:/docker-entrypoint-initdb.d:ro
+      - pagila_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-pagila}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pagila_data:
