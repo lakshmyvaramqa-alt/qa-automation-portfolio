@@ -1,0 +1,29 @@
+{
+  "name": "jmeter-juiceshop-performance",
+  "version": "1.0.0",
+  "description": "Production-Grade Apache JMeter Performance Testing Framework for OWASP Juice Shop",
+  "main": "runner.js",
+  "scripts": {
+    "start:app": "node server/local-juiceshop.js",
+    "test": "node runner.js",
+    "test:baseline": "node runner.js --profile=baseline",
+    "test:load": "node runner.js --profile=load",
+    "test:stress": "node runner.js --profile=stress",
+    "test:spike": "node runner.js --profile=spike",
+    "test:sh": "bash run-tests.sh",
+    "test:bat": "cmd /c run-tests.bat"
+  },
+  "keywords": [
+    "jmeter",
+    "performance-testing",
+    "load-testing",
+    "stress-testing",
+    "spike-testing",
+    "owasp-juice-shop",
+    "slas",
+    "percentiles",
+    "qa-portfolio"
+  ],
+  "author": "Varalakshmy M",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  juice-shop:
+    image: bkimminich/juice-shop:v16.0.0
+    container_name: juiceshop-perf-target
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=unsafe
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000/rest/admin/application-configuration"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
