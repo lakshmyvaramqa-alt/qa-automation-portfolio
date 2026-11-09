@@ -1,0 +1,23 @@
+# JMeter Test Results & Logs
+*.jtl
+*.log
+jmeter.log
+
+# Generated HTML Dashboard Reports
+reports/
+results/
+dashboard/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables & local secrets
+.env
+.env.local
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

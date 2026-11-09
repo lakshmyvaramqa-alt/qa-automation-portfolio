@@ -12,7 +12,18 @@ This repository contains my hands-on projects covering UI automation, API testin
 | 02 | Cypress DemoBlaze | Cypress, JavaScript, Mochawesome | 🟢 Done |
 | 03 | Playwright Toolshop | Playwright, TypeScript | 🟢 Done |
 | 04 | SQL Pagila Validation | PostgreSQL 16, Docker, SQL, Node.js | 🟢 Done |
-| 05 | JMeter Juice Shop Performance | JMeter | ⚪ Planned |
+| 05 | JMeter Juice Shop Performance | Apache JMeter 5.6.3, Docker, Node.js, HTML Dashboard | 🟢 Done |
+
+## Performance Testing Highlights (Project 05)
+
+- **Target**: OWASP Juice Shop (`localhost:3000`)
+- **Workload Model**: 60% Guest Browsers, 30% Registered Shoppers, 10% New Customers
+- **Total Requests**: 5,812 samples across 4 profiles with **0.00% error rate**
+- **Headline Benchmark Metrics**:
+  - **Baseline (1 VU)**: 1.6 req/s | Avg: 47ms | p95: 106ms | Error: 0.00%
+  - **Peak Load (20 VUs)**: 29.7 req/s | Avg: 34ms | p95: 47ms | Error: 0.00%
+  - **Capacity Stress (50 VUs)**: 68.8 req/s | Avg: 32ms | p95: 44ms | Error: 0.00%
+  - **Flash Surge Spike (70 VUs)**: 106.6 req/s | Avg: 31ms | p95: 43ms | Error: 0.00%
 
 ## Tools & Technologies
 
